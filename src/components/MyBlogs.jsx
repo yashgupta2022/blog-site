@@ -11,6 +11,7 @@ export default function MyBlogs() {
     const router = useRouter()
     if (!session) {
         router.push('/')
+        return <></>
     }
     else{
         return (
