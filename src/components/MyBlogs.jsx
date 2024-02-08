@@ -4,7 +4,7 @@ import Header from '@/components/Header'
 import UploadModal from '@/components/UploadModal'
 import { useSession } from 'next-auth/react'
 import {useRouter } from 'next/navigation'
-import React, { useEffect } from 'react'
+import React from 'react'
 
 export default function MyBlogs() {
     const {data:session} = useSession()
