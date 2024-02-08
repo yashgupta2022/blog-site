@@ -6,7 +6,7 @@ import { useSession } from 'next-auth/react'
 import {useRouter } from 'next/navigation'
 import React, { useEffect } from 'react'
 
-export default function MyBlogs() {
+export default function page() {
     const {data:session} = useSession()
     const router = useRouter()
     if (!session) {

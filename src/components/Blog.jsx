@@ -1,3 +1,4 @@
+'use client'
 import React, { useEffect, useState } from 'react'
 import { HiDotsHorizontal,HiOutlineEmojiHappy, HiOutlineChat, HiHeart } from "react-icons/hi";
 import { FaRegBookmark } from "react-icons/fa6";
@@ -62,7 +63,7 @@ export default function Blog({id,username,userImage,file,title,description,type,
             
         </div>
         {/* BlogImage */}
-        {file && type==='image' ?  <img src={file} alt="" className='object-cover w-full'/> : <video  className='w-full  object-cover ' controls ><source src={file}></source></video>
+        {file && type==='image' ?  <img src={file} alt="" className='object-cover w-full max-h-[600px]'/> : <video  className='w-full  object-cover max-h-[600px]' controls ><source src={file}></source></video>
         }
 
         {/* BlogButtons */}
