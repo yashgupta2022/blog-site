@@ -11,6 +11,7 @@ export default function page() {
     const router = useRouter()
     if (!session) {
         router.push('/')
+        return <div></div>
     }
     else{
         return (
